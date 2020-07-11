@@ -1,0 +1,18 @@
+[
+  {
+    "firstname" : "amged",
+    "lastname" : "ali" ,
+    "email" : "amged@gmail.com",
+    "password" : "123456789",
+    "address": "50 farid Street",
+    "city": "london",
+    "state":"California",
+    "zipcode": "55555",
+    "country": "United States",
+    "mobile": "01234567890",
+    "alias":"myAddress",
+    "quantity": "2",
+    "size": "S"
+  }
+
+]
