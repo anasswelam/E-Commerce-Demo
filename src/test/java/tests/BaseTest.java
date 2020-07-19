@@ -31,7 +31,7 @@ public class BaseTest {
 
         driver.manage().window().maximize();
         driver.navigate().to("http://automationpractice.com/index.php");
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
 
     }

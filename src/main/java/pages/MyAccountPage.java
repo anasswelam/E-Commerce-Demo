@@ -6,15 +6,16 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
 public class MyAccountPage extends BasePage {
+
     public MyAccountPage(WebDriver driver) {
         super(driver);
         action = new Actions(driver);
     }
 
-    @FindBy(xpath = "//*[@id=\"block_top_menu\"]/ul/li[1]/a")
+    @FindBy(xpath = "//a[@title='Women']")
     WebElement womenbtn;
 
-    @FindBy(xpath = "//*[@id=\"block_top_menu\"]/ul/li[1]/ul/li[1]/ul/li[2]/a")
+    @FindBy(xpath = "//a[@title='Blouses']")
     WebElement blousesbtn;
 
     @FindBy(linkText = "Sign out")

@@ -1,17 +1,13 @@
 package tests;
 
-import com.opencsv.CSVReader;
-import com.opencsv.exceptions.CsvValidationException;
+
 import data.JsonDataReader;
 import org.json.simple.parser.ParseException;
-import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.HomePage;
 import pages.LoginPage;
 import pages.MyAccountPage;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 
 public class LoginTest extends BaseTest {

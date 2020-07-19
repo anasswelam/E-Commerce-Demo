@@ -9,14 +9,11 @@ import pages.*;
 import java.io.IOException;
 
 public class OrderDetailsTest extends BaseTest {
-    HomePage homeObj;
-    LoginPage loginObj;
-    MyAccountPage myaccountObj;
     BlousesPage blousesObj;
     ShoppingCartPage shoppingObj;
 
 
-    @Test(priority = 1)
+    @Test
     public void userCanAddBlousestoCart() throws IOException, ParseException {
 
         JsonDataReader jsonReader = new JsonDataReader();
@@ -26,7 +23,7 @@ public class OrderDetailsTest extends BaseTest {
         blousesObj.addBlouseToCart(jsonReader.quantity, jsonReader.size);
         Assert.assertTrue(blousesObj.sucssessMsg.getText().contains("Your shopping cart contains:"));
     }
-        @Test(priority = 2)
+        @Test(priority = 1)
         public void UserCanCheckout() throws IOException, ParseException {
             JsonDataReader jsonReader = new JsonDataReader();
             jsonReader.JsonReader();
