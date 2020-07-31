@@ -1,16 +1,16 @@
 [
   {
-    "firstname" : "smaa",
-    "lastname" : "ali" ,
-    "email" : "smaa852@gmail.com",
+    "firstname" : "daisy",
+    "lastname" : "Swelam" ,
+    "email" : "nsolf@gmail.com",
     "password" : "123456789",
     "address": "50 farid Street",
     "city": "london",
     "state":"California",
-    "zipcode": "55555",
+    "zipcode": "32845",
     "country": "United States",
     "mobile": "01234567890",
-    "alias":"myAddress",
+    "alias":"daisy",
     "quantity": "2",
     "size": "S"
   }

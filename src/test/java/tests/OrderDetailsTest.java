@@ -32,7 +32,7 @@ public class OrderDetailsTest extends BaseTest {
             shoppingObj.confirmAddress();
             shoppingObj.openPayment();
             shoppingObj.UserOpenBankWire();
-            Assert.assertTrue(shoppingObj.totalprice.getText().contains("The total amount of your order comes to: $56.00"));
+            Assert.assertTrue(shoppingObj.totalprice.getText().equals("$56.00"));
             Assert.assertTrue(shoppingObj.dollarcurrancy.getText().equals("Dollar"));
             shoppingObj.userConfirmOrder();
             Assert.assertTrue(shoppingObj.confirmationMsg.getText().contains("Your order on My Store is complete."));

@@ -19,7 +19,7 @@ public class MyAccountPage extends BasePage {
     WebElement blousesbtn;
 
     @FindBy(linkText = "Sign out")
-    WebElement logout;
+   public WebElement logout;
 
 
 

@@ -1,5 +1,6 @@
 package tests;
 
+import cucumber.api.testng.AbstractTestNGCucumberTests;
 import helper.Helper;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -9,7 +10,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.*;
 import java.util.concurrent.TimeUnit;
 
-public class BaseTest {
+public class BaseTest extends AbstractTestNGCucumberTests {
 
     public static WebDriver driver;
 
@@ -31,18 +32,18 @@ public class BaseTest {
 
         driver.manage().window().maximize();
         driver.navigate().to("http://automationpractice.com/index.php");
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 
 
     }
 
-    @AfterMethod
-    public void TakeScreenshot(ITestResult result) {
-        if (result.getStatus() == ITestResult.FAILURE) ;
-        {
-            Helper.capturescreenshot(driver, result.getName());
-        }
-    }
+//    @AfterMethod
+//    public void TakeScreenshot(ITestResult result) {
+//        if (result.getStatus() == ITestResult.FAILURE) ;
+//        {
+//            Helper.capturescreenshot(driver, result.getName());
+//        }
+//    }
 
     @AfterSuite
     public void closedriver() {

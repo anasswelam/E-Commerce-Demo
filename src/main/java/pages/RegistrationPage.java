@@ -4,14 +4,20 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.List;
 
 public class RegistrationPage extends BasePage {
 
     @FindBy(css = "p.info-account")
     public WebElement SuccessRegistrationMgs;
 
+    @FindBy(xpath = "//input[@type='radio']")
+    List<WebElement> radios;
+
     @FindBy(id = "id_gender2")
-    WebElement MrsRadiobtn;
+   public WebElement MrsRadiobtn;
 
     @FindBy(id = "id_gender1")
     WebElement MrRadiobtn;
@@ -62,9 +68,18 @@ public class RegistrationPage extends BasePage {
         super(driver);
     }
 
+//    public void selectRadio(String value){
+//        for (WebElement radio : radios){
+//            if (radio.getAttribute("value").equals(value)){
+//              radio.click();
+//            }
+//        } }
+
+
+
     public void createUserAccount(String firstname, String lastname, String email, String password, String address, String city
             , String state, String zipcode, String country, String mobile, String alias) {
-
+        MrsRadiobtn.click();
         sendkeys(firstNamebox, firstname);
         sendkeys(lastNamebox, lastname);
         cleartext(emailbox);

@@ -18,10 +18,7 @@ public class BlousesPage extends BasePage {
     @FindBy(css = "span.heading-counter")
     public WebElement sucssessMsg;
 
-    @FindBy(linkText = "In stock")
-    WebElement inStockBtn;
-
-    @FindBy(linkText = "Add to cart")
+    @FindBy(xpath = "//button[@class='exclusive']")
     WebElement addtoCart;
 
     @FindBy(id = "quantity_wanted")
@@ -30,26 +27,18 @@ public class BlousesPage extends BasePage {
     @FindBy(id = "group_1")
     WebElement sizebox;
 
-    @FindBy(id = "color_11")
-    WebElement blackcolor;
+    @FindBy(xpath= "//a[@name='Black']")
+    WebElement blackBlouse;
 
-    @FindBy(id = "color_11")
-    WebElement whitecolor;
+    @FindBy(xpath= "//a[@name='White']")
+    WebElement whiteBlouse;
 
-    @FindBy(name = "Submit")
-    WebElement submitBtn;
+    @FindBy(xpath= "//a[@class='btn btn-default button button-medium']")
+    WebElement proceedbtn1;
 
-    @FindBy(xpath= "//*[@id=\"add_to_cart\"]/button")
-    WebElement proceedTocheckupbtn;
-
-    @FindBy(css = "button lnk_view btn btn-default")
-    WebElement moreBtn;
-
-    @FindBy(xpath = "//*[@id=\"center_column\"]/ul/li/div/div[2]/h5/a")
+    @FindBy(xpath = "//a[@class='product-name' and @title='Blouse']")
     WebElement blouselink;
 
-    @FindBy(xpath = "//*[@id=\"layer_cart\"]/div[1]/div[2]/div[4]/a")
-    WebElement proceed2btn;
 
 
 
@@ -59,7 +48,8 @@ public class BlousesPage extends BasePage {
         sendkeys(quantitybox, quantity);
         select = new Select(sizebox);
         select.selectByVisibleText(size);
-        clickbutton(proceedTocheckupbtn);
-        clickbutton(proceed2btn);
+        action.moveToElement(blackBlouse).click().perform();
+        clickbutton(addtoCart);
+        clickbutton(proceedbtn1);
     }
 }

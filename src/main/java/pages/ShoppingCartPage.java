@@ -4,10 +4,13 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import java.util.List;
+
 public class ShoppingCartPage extends BasePage {
     public ShoppingCartPage(WebDriver driver) {
         super(driver);
     }
+
 
 
     @FindBy(id = "uniform-cgv")
@@ -19,7 +22,7 @@ public class ShoppingCartPage extends BasePage {
     @FindBy(xpath = "//*[@id=\"center_column\"]/div/p/strong")
     public WebElement confirmationMsg;
 
-    @FindBy(xpath = "//*[@id=\"center_column\"]/p[2]/a[1]/span")
+    @FindBy(xpath = "//a[@class='button btn btn-default standard-checkout button-medium']")
     WebElement proceedbtn;
 
     @FindBy(css = "a.bankwire")
@@ -28,13 +31,13 @@ public class ShoppingCartPage extends BasePage {
     @FindBy(xpath = "//*[@id=\"cart_navigation\"]/button/span")
     WebElement confirmOrderbtn;
 
-    @FindBy(xpath = "//*[@id=\"center_column\"]/form/p/button/span")
+    @FindBy(xpath = "//button[@class='button btn btn-default button-medium']")
     WebElement proceedbtn2;
 
-    @FindBy(xpath = "//*[@id=\"form\"]/p/button/span")
+    @FindBy(xpath = "//button[@class='button btn btn-default standard-checkout button-medium']")
     WebElement proceedbtn3;
 
-    @FindBy(xpath = "//*[@id=\"center_column\"]/form/div/p[2]")
+    @FindBy(xpath = "//span[@class='price' and @id='amount']")
   public   WebElement totalprice;
 
     @FindBy(xpath = "//*[@id=\"center_column\"]/form/div/p[3]/b")
@@ -65,5 +68,7 @@ public class ShoppingCartPage extends BasePage {
     public void userConfirmOrder(){
         clickbutton(confirmOrderbtn);
     }
+
+
 
 }

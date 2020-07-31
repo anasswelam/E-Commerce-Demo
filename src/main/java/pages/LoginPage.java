@@ -2,12 +2,11 @@ package pages;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 
 public class LoginPage extends BasePage {
     @FindBy(id = "email_create")
-    WebElement emailRbox;
+  public WebElement emailRbox;
     @FindBy(id = "SubmitCreate")
     WebElement createbtn;
     @FindBy(id = "email")
