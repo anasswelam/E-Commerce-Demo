@@ -1,8 +1,39 @@
+
 [
+  {
+    "firstname" : "rosee",
+    "lastname" : "Sweelam" ,
+    "email" : "noussaaa@gmail.com",
+    "password" : "123456789",
+    "address": "50 farid Street",
+    "city": "london",
+    "state":"California",
+    "zipcode": "32845",
+    "country": "United States",
+    "mobile": "01234567890",
+    "alias":"daisy",
+    "quantity": "2",
+    "size": "S"
+  },
   {
     "firstname" : "daisy",
     "lastname" : "Swelam" ,
-    "email" : "nsolf@gmail.com",
+    "email" : "noza@gmail.com",
+    "password" : "123456789",
+    "address": "50 farid Street",
+    "city": "london",
+    "state":"California",
+    "zipcode": "32845",
+    "country": "United States",
+    "mobile": "01234567890",
+    "alias":"daisy",
+    "quantity": "2",
+    "size": "S"
+  },
+  {
+    "firstname" : "nona",
+    "lastname" : "Swelam" ,
+    "email" : "anoooo@gmail.com",
     "password" : "123456789",
     "address": "50 farid Street",
     "city": "london",
