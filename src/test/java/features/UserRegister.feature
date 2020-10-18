@@ -6,7 +6,7 @@ Feature: User Registration
     When I enter <email>
     And I enter <firstname>,<lastname>,<email>,<password>,<address>,<city>,<state>,<zipcode>,<country>,<mobile>,<alias>
     Then The registration page displayed successfully
-
+#comment
     Examples:
       | firstname | lastname | email | password| address | city| state|zipcode| country| mobile| alias|
       | An | MAgdy | anMagdy@gmail.com | 123456789|  50 farid street| California| state|82456| United States| 01234567891| ann|

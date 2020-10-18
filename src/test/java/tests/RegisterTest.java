@@ -1,10 +1,7 @@
 package tests;
 
-import com.opencsv.CSVReader;
-import com.opencsv.exceptions.CsvValidationException;
 import data.JsonDataReader;
 import org.json.simple.parser.ParseException;
-import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -15,7 +12,6 @@ import pages.MyAccountPage;
 import pages.RegistrationPage;
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
 public class RegisterTest extends BaseTest{
 
@@ -43,6 +39,7 @@ public class RegisterTest extends BaseTest{
                         JsonDataReader jsonReader = new JsonDataReader();
                         jsonReader.JsonReader();
             registraionObj = new RegistrationPage(driver);
+
             registraionObj.createUserAccount
                     (jsonReader.firstname,jsonReader.lastname,jsonReader.email,
                             jsonReader.password,jsonReader.address,jsonReader.city,

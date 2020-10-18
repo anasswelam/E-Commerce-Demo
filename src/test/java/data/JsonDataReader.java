@@ -1,71 +1,61 @@
 package data;
 
+import com.fasterxml.jackson.databind.type.TypeParser;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
+import sun.rmi.runtime.Log;
 
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Iterator;
 
 public class JsonDataReader {
-    public String firstname, lastname, email,
+
+   public String firstname, lastname, email,
             password, address, city, state,
             zipcode, country, mobile, alias, quantity, size;
-
     public void JsonReader() throws IOException, ParseException {
-        String filePath = System.getProperty("user.dir") + "/src/test/java/data/data.json";
 
+        String filePath = System.getProperty("user.dir")+"/src/test/java/data/data.json";
         File srcFile = new File(filePath);
-
         JSONParser parser = new JSONParser();
-        JSONArray jarray = (JSONArray) parser.parse(new FileReader(srcFile));
+        JSONArray jarray = (JSONArray)parser.parse(new FileReader(srcFile));
 
-        for (Object jsonObj : jarray) {
-            JSONObject person = (JSONObject) jsonObj;
-            firstname = (String) person.get("firstname");
-            System.out.println(firstname);
+        for(Object jsonObj : jarray)
+        {
+            JSONObject usersObj = (JSONObject) jsonObj ;
+            firstname = (String) usersObj.get("firstname");
 
-            lastname = (String) person.get("lastname");
-            System.out.println(lastname);
+             lastname = (String) usersObj.get("lastname");
 
-            email = (String) person.get("email");
-            System.out.println(email);
+             email = (String) usersObj.get("email");
 
-            password = (String) person.get("password");
-            System.out.println(password);
+             password = (String) usersObj.get("password");
 
-            address = (String) person.get("address");
-            System.out.println(address);
+             address = (String) usersObj.get("address");
 
-            city = (String) person.get("city");
-            System.out.println(city);
+             city = (String) usersObj.get("city");
 
-            state = (String) person.get("state");
-            System.out.println(state);
+             state = (String) usersObj.get("state");
 
-            zipcode = (String) person.get("zipcode");
-            System.out.println(zipcode);
+             zipcode = (String) usersObj.get("zipcode");
 
-            country = (String) person.get("country");
-            System.out.println(country);
+             country = (String) usersObj.get("country");
 
-            mobile = (String) person.get("mobile");
-            System.out.println(mobile);
+             mobile = (String) usersObj.get("mobile");
 
-            alias = (String) person.get("alias");
-            System.out.println(alias);
+             alias = (String) usersObj.get("alias");
 
-            quantity = (String) person.get("quantity");
-            System.out.println(quantity);
+             quantity = (String) usersObj.get("quantity");
 
-            size = (String) person.get("size");
-            System.out.println(size);
-
+             size = (String) usersObj.get("size");
+             System.out.println(firstname);
+             System.out.println(lastname);
+             System.out.println(email);
 
         }
-
-    }
-
+}
 }
