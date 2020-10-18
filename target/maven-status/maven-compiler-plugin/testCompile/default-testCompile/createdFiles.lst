@@ -1,0 +1,10 @@
+tests\RegisterTest.class
+tests\OrderDetailsTest.class
+tests\BaseTest2.class
+steps\UserRegistraion.class
+tests\BaseTest.class
+helper\Helper.class
+tests\LoginTest.class
+data\JsonDataReader.class
+tests\LoginTestParallel.class
+runner\TestRunner.class

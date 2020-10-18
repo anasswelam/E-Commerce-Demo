@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Regression testing" duration-ms="19321" started-at="2020-10-15T16:27:10 EET" finished-at="2020-10-15T16:27:29 EET">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:tests.RegisterTest@197d671]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Regression test" duration-ms="19321" started-at="2020-10-15T16:27:10 EET" finished-at="2020-10-15T16:27:29 EET">
+      <class name="tests.RegisterTest">
+        <test-method status="PASS" signature="StartTest(java.lang.String)[pri:0, instance:tests.RegisterTest@197d671]" name="StartTest" is-config="true" duration-ms="37136" started-at="2020-10-15T16:26:33 EET" finished-at="2020-10-15T16:27:10 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartTest -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:tests.RegisterTest@197d671]" name="setUpClass" is-config="true" duration-ms="1789" started-at="2020-10-15T16:27:10 EET" finished-at="2020-10-15T16:27:12 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="EnterMailToRegistration()[pri:1, instance:tests.RegisterTest@197d671]" name="EnterMailToRegistration" duration-ms="7093" started-at="2020-10-15T16:27:12 EET" finished-at="2020-10-15T16:27:19 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EnterMailToRegistration -->
+        <test-method status="PASS" signature="takeScreen(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@197d671]" name="takeScreen" is-config="true" duration-ms="0" started-at="2020-10-15T16:27:20 EET" finished-at="2020-10-15T16:27:20 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=EnterMailToRegistration status=SUCCESS method=RegisterTest.EnterMailToRegistration()[pri:1, instance:tests.RegisterTest@197d671] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreen -->
+        <test-method status="PASS" signature="UserRegistrationTest()[pri:2, instance:tests.RegisterTest@197d671]" name="UserRegistrationTest" duration-ms="9656" started-at="2020-10-15T16:27:20 EET" finished-at="2020-10-15T16:27:29 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UserRegistrationTest -->
+        <test-method status="PASS" signature="takeScreen(org.testng.ITestResult)[pri:0, instance:tests.RegisterTest@197d671]" name="takeScreen" is-config="true" duration-ms="1" started-at="2020-10-15T16:27:29 EET" finished-at="2020-10-15T16:27:29 EET">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=UserRegistrationTest status=SUCCESS method=RegisterTest.UserRegistrationTest()[pri:2, instance:tests.RegisterTest@197d671] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- takeScreen -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:tests.RegisterTest@197d671]" name="tearDownClass" is-config="true" duration-ms="40" started-at="2020-10-15T16:27:29 EET" finished-at="2020-10-15T16:27:29 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="closedriver()[pri:0, instance:tests.RegisterTest@197d671]" name="closedriver" is-config="true" duration-ms="1938" started-at="2020-10-15T16:27:29 EET" finished-at="2020-10-15T16:27:31 EET">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closedriver -->
+      </class> <!-- tests.RegisterTest -->
+    </test> <!-- Regression test -->
+  </suite> <!-- Regression testing -->
+</testng-results>
